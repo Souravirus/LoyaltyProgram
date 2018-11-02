@@ -1,2 +1,15 @@
-<h1>Orders#new</h1>
-<p>Find me in app/views/orders/new.html.erb</p>
+<h1> Please enter the order details</h1>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <%= form_for(@order) do |f| %>
+            <%= f.label :user_name %>
+            <%= f.text_field :user_name %>
+            <%= f.label :product_name %>
+            <%= f.text_field :product_name %>
+            <%= f.label :product_amt %>
+            <%= f.text_field :product_amt %>
+            <%= f.submit "Submit", class: "btn btn-primary" %>
+        <% end %>
+    </div>
+</div>
