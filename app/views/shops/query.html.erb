@@ -1,5 +1,6 @@
 <h1> Page to show how many free food items </h1>
 <h2> Enter the details </h2>
+<p> All the fields are compulsory </p>
 
 <div class="row">
     <%= form_tag(action: "query") do %>
@@ -15,6 +16,6 @@
         <%= submit_tag("find") %>
     <% end %>
 
-    <h1> <%= @ans %> </h1>
+    <p> <%= @ans %> </p>
 
 </div>
