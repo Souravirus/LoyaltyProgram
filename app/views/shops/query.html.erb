@@ -1,0 +1,20 @@
+<h1> Page to show how many free food items </h1>
+<h2> Enter the details </h2>
+
+<div class="row">
+    <%= form_tag(action: "query") do %>
+        <%= label_tag(:name, "Enter the shop name:" ) %>
+        <%= text_field_tag(:name) %>
+        </br>
+        <%= label_tag(:user_name, "Enter the user name:" )%>
+        <%= text_field_tag(:user_name)%>
+        </br>
+        <%= label_tag(:product_name, "Enter the product name:" )%>
+        <%= text_field_tag(:product_name)%>
+        </br>
+        <%= submit_tag("find") %>
+    <% end %>
+
+    <h1> <%= @ans %> </h1>
+
+</div>
